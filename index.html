@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>wikiTube</title>
+
+</head>
+<header>
+    <div class="head flex justify-space-around">
+        <h1>wikiTube</h1>
+        <div class="info-user flex align-center">
+            <input type="text">
+            <button onclick="getInput()">submit</button>
+        </div>
+</header>
+
+<body onload="init()">
+    <main>
+        <div class="main-container flex">
+            <div class="video">
+                <ul class="vid-list">
+                </ul>
+            </div>
+            <div class="user-info-container flex flex-column justify-space-between align-center">
+                <div class="video-youtube">
+                </div>
+                <div class="wiki-result">
+                    <div class="wiki-info">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="popular-key-words flex justify-center"></ul>
+        <button onclick="clearLocalStorage()">clear-history</button>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/service.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+
+
+</body>
+
+</html>

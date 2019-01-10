@@ -1,0 +1,133 @@
+*{box-sizing: border-box;}
+
+@font-face{
+    font-family: 'Indie Flower';
+    src: url('../fonts/Indie_Flower/IndieFlower.ttf')
+}
+
+@font-face{
+    font-family: 'Lato';
+    src: url('../fonts/lato/Lato-Regular.ttf')
+}
+
+html{
+    background-color: #B0DAF1;
+    font-family: 'Lato';
+}
+
+body{
+    margin: 0 auto;
+}
+
+header{
+    background-color: #3E1929;
+    color: aliceblue;
+}
+
+header h1{
+    font-family: 'Indie Flower';
+    font-size: 3em;
+}
+
+ul{
+    padding: 0px;
+    padding-right: 10px;
+}
+
+.list-item{
+    background-color: #6A7FDB;
+    border: solid 1px black;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 30vw;
+}
+
+.video-youtube iframe{
+    width: 90vw;
+    height: 50vw;
+    max-width: 555px;
+    max-height: 395px;
+}
+
+.list-item:hover{
+    background-color:#57E2E5;
+}
+
+.list-item img{
+    margin: 10px;
+}
+
+.info-user{
+    padding-bottom: 10px;
+}
+
+.user-info-container{
+    margin: 20px;
+}
+
+.wiki-result{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    max-width: 100%;
+    height: 20vh;
+    background-color:#62929E; 
+    margin: 0 auto;
+}
+
+.popular-key-words li{
+    padding: 10px;
+    list-style: none;
+    font-family: 'Indie Flower';
+    cursor: pointer;
+    color: white;
+}
+
+@media(max-width:875px){
+    .main-container{
+        flex-direction: column-reverse;
+    }
+    .list-item{
+        width: 85vw;
+    }
+    
+}
+
+@media (max-width:425px){
+    .head{
+        display: block;
+        padding: 0px 10px; 
+    }
+
+}
+
+
+/* helpers */
+
+.flex {
+    display: flex;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+.justify-space-around{
+    justify-content: space-around;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
